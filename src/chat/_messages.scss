@@ -5,8 +5,9 @@
   .avatar-1BDn8e {
     top: var(--message-padding);
     left: var(--message-padding);
-    & + h2:after {
-      left: 50px;
+    & + h2 {
+      margin-left: 0;
+      padding-left: 0;
     }
   }
 

@@ -105,6 +105,7 @@
   --roundness: 50px;
   --message-padding: var(--chat-message-padding, 20px);
   --message-spacing: var(--chat-message-spacing, 20px);
+  --bd-blue: rgba(var(--accent), 1);
   --text-link: rgba(var(--accent), 1);
   --dark-modal-background: #171a1f;
   --dark-modal-item: #1c1f25;
@@ -788,34 +789,6 @@
   background-color: var(--settings-box);
   box-shadow: var(--box-shadow);
   border: none;
-}
-#app-mount .layer-3QrUeG[aria-label*=SETTINGS] .ui-switch-item .style-description {
-  border-bottom-color: var(--settings-separator);
-}
-#app-mount .layer-3QrUeG[aria-label*=SETTINGS] .settings-open {
-  padding: 10px !important;
-  box-sizing: border-box;
-}
-#app-mount .layer-3QrUeG[aria-label*=SETTINGS] .bda-slist li {
-  background-color: var(--settings-box);
-  box-shadow: var(--box-shadow);
-  border: none;
-  padding: 0;
-}
-#app-mount .layer-3QrUeG[aria-label*=SETTINGS] .bda-slist li .bda-header {
-  padding: 10px 10px 0;
-  box-sizing: border-box;
-  border: none;
-}
-#app-mount .layer-3QrUeG[aria-label*=SETTINGS] .bda-slist li .bda-description-wrap {
-  padding: 10px;
-  box-sizing: border-box;
-}
-#app-mount .layer-3QrUeG[aria-label*=SETTINGS] .bda-slist li .bda-footer {
-  padding: 10px;
-  box-sizing: border-box;
-  border: none;
-  background: var(--settings-box-footer);
 }
 
 .theme-light #user-settings > div:nth-child(3) > div > div:nth-child(2) > div > div > div > main > div > div > div:nth-child(2) > div > div:nth-child(2) > label > div.label-cywgfr.labelClickable-11AuB8.labelForward-1wfipV > div:after {
@@ -1773,8 +1746,9 @@ html.theme-light .wrapper-2ZbzR9 .slide-2pHaq5 .footer-3rDWdC {
   top: var(--message-padding);
   left: var(--message-padding);
 }
-#app-mount .cozyMessage-3V1Y8y .avatar-1BDn8e + h2:after {
-  left: 50px;
+#app-mount .cozyMessage-3V1Y8y .avatar-1BDn8e + h2 {
+  margin-left: 0;
+  padding-left: 0;
 }
 #app-mount .cozyMessage-3V1Y8y .contents-2mQqc9,
 #app-mount .cozyMessage-3V1Y8y .container-1ov-mD {
@@ -1897,4 +1871,42 @@ html.theme-light .wrapper-2ZbzR9 .slide-2pHaq5 .footer-3rDWdC {
   top: 0;
   padding: 15px;
   box-sizing: border-box;
+}
+
+#app-mount .bd-search-wrapper {
+  background: var(--settings-box);
+  box-shadow: var(--box-shadow);
+}
+#app-mount .bd-card {
+  background-color: var(--settings-box);
+  border: none;
+  box-shadow: var(--box-shadow);
+  padding: 10px;
+  box-sizing: border-box;
+}
+#app-mount .bda-header {
+  padding: 0 0 10px;
+  margin-bottom: 0;
+}
+#app-mount .bda-description {
+  margin: 0;
+  padding: 10px 0;
+}
+#app-mount .bda-links {
+  font-size: 0;
+  padding: 10px 0 6px;
+}
+#app-mount .bda-link {
+  font-size: 12px;
+  background: red;
+  background: var(--settings-box-footer);
+  border-radius: 15px;
+  padding: 4px 10px;
+  margin-right: 5px;
+  text-decoration: none;
+  transition: 0.1s ease;
+}
+#app-mount .bda-link:hover {
+  background: rgba(var(--accent), 1);
+  color: #fff;
 }
