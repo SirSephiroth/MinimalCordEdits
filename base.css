@@ -1,9 +1,9 @@
 .theme-dark {
-  --foreground-1: #252831;
-  --foreground-2: #21232b;
+  --foreground-1: #250a38;
+  --foreground-2: #1f0a2b;
   --foreground-divider: #dadada;
-  --background-1: #171a1f;
-  --background-2: #131519;
+  --background-1: #150821;
+  --background-2: #12071a;
   --box-shadow: 0 0 15px 2px rgba(0,0,0,0.2);
   --scrollbar: rgb(53, 55, 63, 0.5);
   --tooltips: #2d323c;
